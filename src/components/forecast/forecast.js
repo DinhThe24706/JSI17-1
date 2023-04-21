@@ -32,7 +32,7 @@ const Forecast = ({ data }) => {
                                 </div>
                                 <div className="daily-details-grid-item">
                                     <label>Humidity:</label>
-                                    <label>{item.humidity} %</label>
+                                    <label>{item.main.humidity} %</label>
 
                                 </div>
                                 <div className="daily-details-grid-item">
@@ -52,7 +52,7 @@ const Forecast = ({ data }) => {
                                 </div>
                                 <div className="daily-details-grid-item">
                                     <label>Feel like:</label>
-                                    <label>{Math.round(item.main.feel_likes)} °C</label>
+                                    <label>{Math.round(item.main.feels_like)} °C</label>
 
                                 </div>
 
